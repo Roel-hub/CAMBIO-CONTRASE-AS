@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="css/recuperar.css"> <!-- Asegúrate de que la ruta sea correcta -->
+</head>
+<body>
+    <div class="recuperar-container">
+        <h2>Recuperar Contraseña</h2>
+
+        <!-- Formulario para ingresar el usuario y nueva contraseña -->
+        <input type="text" id="usuario" placeholder="Usuario" required>
+        <input type="password" id="nuevaContrasena" placeholder="Nueva Contraseña" required>
+        <button onclick="cambiarContrasena()">Cambiar Contraseña</button>
+        
+        <!-- Mensaje de error o éxito -->
+        <p id="mensaje" style="color: red;"></p>
+        
+        <a href="login.html" class="link">Volver al inicio de sesión</a>
+    </div>
+
+    <!-- Vinculamos el archivo JS que maneja la lógica -->
+    <script src="recuperar.js"></script>
+</body>
+</html>
